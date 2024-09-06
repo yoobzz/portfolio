@@ -176,3 +176,9 @@ blockquote {
     padding-left: 20px;
     border-left: 4px solid #00e6e6;
 }
+/* Nowa klasa glitch-active dla mocniejszego efektu glitch */
+.glitch-active::before, .glitch-active::after {
+    clip: rect(0, 900px, 9999px, 0);
+    animation: glitch-anim2 0.2s infinite linear alternate-reverse;
+}
+
